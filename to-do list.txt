@@ -1,0 +1,20 @@
+.1 get the necessary materials for building the website
+-website name= Ore's Bukah
+               images of african dishes from a free source image website
+
+.2 the website will contain two pages
+                 .the showcase page and the menu-list page
+                
+
+.3 showcase page consist of a background video and an order button
+
+.4 menupage consist of :
+                      -heading
+                      -main section:
+                                     -menu-heading
+                                     -menu-list
+                       -footer
+
+                       note: the menu-container is moving to the left please check it out
+
+                 

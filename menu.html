@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>menu-page</title>
+</head>
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/Ore's Bukka.png" alt="logo"></a>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+          </div>
+      </nav>
+   
+    
+    <!--menu container-->
+        <section><div class="container">
+            <h1 class="text-center" style="margin-top: 5px;">Order Your Menu</h1>
+            <div class="container-lg">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col">
+                        <img src="img/beans and plantain.jpg" class="menu-item" alt="beans-and-plantain" id="bap"/>
+                        <p>Beans and Plantain <span> ₦2000</span></p>
+                    </div>
+                <div class="col">
+                        <img src="img/burger3.jpg" class="menu-item" alt="Burger" id="burger" />
+                        <p>Burger <span> ₦1500</span></p>
+                </div>
+                <div class="col">
+                    <img src="img/juice.jpg" class="menu-item" alt="juice" id="juice"/>
+                    <p>Orange Juice <span> ₦1000</span></p>
+                </div>
+                <div class="col">
+                    <img src="img/rice and fried chiken leg.jpg" class="menu-item" alt="rice-and-fried-chicken" id="rfafc" />
+                    <p>Rice and Chicken <span> ₦2500</span></p>
+                    </div>
+                <div class="col">
+                    <img src="img/cocktail.jpg" class="menu-item" alt="milkshake" id="cocktail" />
+                    <p>Cocktail <span> ₦2500</span></p>
+                </div> 
+                <div class="col">
+                   <img src="img/bread and tea.jpg" class="menu-item" alt="bread and tea" id="bat" /> 
+                   <p>Bread and Tea<span> ₦2500</span></p>
+                </div>
+                <div class="col">
+                    <img src="img/suya.jpg" class="menu-item" alt="suya" id="suya" />
+                    <p>Suya <span> ₦1800</span></p>
+                </div>
+                <div class="col">
+                   <img src="img/eba and vegetable soup.jpg" class="menu-item" alt="eba-and-okra-soup" id="eaos"/>
+                   <p class="menu-text">Eba and Okra soup <span> ₦3000</span></p>
+                </div>
+                <div class="col">
+                    <img src="img/amala and efe riro.jpg" class="menu-item" alt="amala-and-efo-riro" id="aaer"/>
+                    <p  class="menu-text">Amala and Efo-riro <span> ₦2800</span></p>
+                </div>
+                <div class="col">
+                    <img src="img/fishand plantain.jpg" class="menu-item" alt="fish-and-plantain" id="fap"/>
+                   <p class="menu-text">Fish and plantain <span> ₦5000</span></p>
+                </div>
+                   <div class="col">
+                        <img src="img/ewa agoin.jpg" class="menu-item" alt="ewa-agoin" id="eg"/>
+                       <P class="menu-text"> Ewa Agoyin and Bread<span> ₦1300</span></P>
+                </div>
+                <div class="col">
+                    <img src="img/bottle water.jpg" class="menu-item" alt="bottle-water" id="bw"/>
+                    <p class="menu-text">Bottle Water <span> ₦500</span></p>
+              </div>
+        </div>
+    </div>
+    <div id="contain">
+    <div class="container-fluid">
+        <!-- Content here -->
+      <!-- <div class="container-lg">-->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col">
+                    <h3>Breakfast items:</h3>
+                    <input type="button" value="Clear column" onclick="clearColumn(this)" class="center" />
+                      <div id="breakfast"></div>
+                    </div>
+                <div class="col">
+                    <h3>Lunch items:</h3>
+                   <input type="button" value="Clear column" onclick="clearColumn(this)" class="center" />
+                        <div id="lunch"></div>
+                    </div>
+                   <div class="col">
+                    <h3>Dinner items:</h3>
+                    <input type="button" value="Clear column" onclick="clearColumn(this)" class="center" />
+                    <div id="dinner"></div>
+                            </div>
+                            <div class="col">
+                            <h3>Drinks:</h3>
+                            <input type="button" value="Clear column" onclick="clearColumn(this)" class="center" />
+                            <div id="drink"></div>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+     <div id="contain">
+     <div class="container">
+        <div class="row row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+                <input type="button" value="Clear list" onclick="clearList()" />
+            </div>
+            <div class="col">
+                <input type="button" value="Calculate price" onclick="calculatePrice()" />
+                <div id="total"></div>
+            </div>
+     </div>
+     </div>
+     </div>
+        </section>
+        
+     
+     <footer  class=" position-relative">
+        <div class="container-fliud  text-center">
+            <h2 class="opening-hours">Opening Days</h2>
+            <p>Monday to Friday: <span style="padding-top:5px">    7am - 10pm</span></p>
+            <p>Saturday and Sunday:<span style="padding-right: 5px;">   7am - 11pm</span></p>
+            <div class="booking-contact">
+                <h3>Booking Contact</h3>
+                <h3>(+234) 890-1111-333</h3>
+            </div>
+            <h4>Follow Us</h4>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+            <h2 class="greeting">Thank You</h2>
+        </div>
+      
+       </footer>
+  <script src="menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>  
