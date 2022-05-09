@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tapestry&family=Water+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&family=Tapestry&family=Water+Brush&display=swap');
 *{
    box-sizing: border-box;  
   
@@ -49,7 +50,7 @@ a{
 }
 
 .showcase .content p{
-    font-family: "Water Brush" sans-serif;
+    font-family: "Tapestry" sans-serif;
     font-size: 15px;
     margin-bottom: 1rem;
 }
