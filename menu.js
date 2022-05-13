@@ -28,7 +28,7 @@ var price = {
  
   
   // add each category to an object (used for match individual items to their categories)
-  var cats = { drink, breakfast, lunch, dinner, };
+  var menu = { drink, breakfast, lunch, dinner, };
   
   /* indicies for items added to category divs
    * e.g. if muffin is added after pancake, muffin will have an index of 1
@@ -62,9 +62,9 @@ var price = {
   // returns the category of an item based on the image id
   function getCategory(obj) {
     var id = obj.id;
-    for (i in cats) {
-      for (j = 0; j < cats[i].length; j++) {
-        if (id == cats[i][j]) {
+    for (i in menu) {
+      for (j = 0; j < menu[i].length; j++) {
+        if (id == menu[i][j]) {
           return i;
         }
       }
@@ -74,7 +74,7 @@ var price = {
   // calculates the total price for all items in each category div
   function calculatePrice() {
     var total = 0;
-    for (i in cats) {
+    for (i in menu) {
       var div = document.getElementById(i);
       var nodes = div.childNodes;
       for (j = 0; j < nodes.length; j++) {
@@ -96,7 +96,7 @@ var price = {
   
   // clears each category div, and resets each category index to 0
   function clearList() {
-    for (i in cats) {
+    for (i in menu) {
       var div = document.getElementById(i)
       while (div.hasChildNodes()) {
         var nodes = div.childNodes;
@@ -113,11 +113,11 @@ var price = {
   // clears a categories column, resets that index to 0, and clears the total price (if present)
   function clearColumn(obj) {
     var cat = obj.nextElementSibling.id;
-    var div = document.getElementById(cat);
+    var div = document.getElementById(menu);
     while (div.hasChildNodes()) {
       div.removeChild(div.childNodes[0]);
     }
-    switch (cat) {
+    switch (menu) {
       case "drink":
         if (drinkIdx > 0) {
           clearTotal();
